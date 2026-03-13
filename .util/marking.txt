@@ -2,31 +2,23 @@
 platform linux -- Python 3.12.12, pytest-9.0.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Networking-Week-1/Assessment-Networking-Week-1
 plugins: requests-mock-1.12.1
-collected 91 items
+collected 90 items
 
-test_postcode_cache.py FFFFFFFFFFFFF                                     [ 14%]
-test_postcode_cli.py F.FFFFFFFFFFFFFFFFFFFFFFF.F.....                    [ 49%]
+test_postcode_cache.py .............                                     [ 14%]
+test_postcode_cli.py ...............................                     [ 48%]
 test_postcode_functions.py ............................................. [ 98%]
 .                                                                        [100%]
 
-======================== 38 failed, 53 passed in 1.04s =========================
+============================== 90 passed in 5.81s ==============================
 ************* Module postcode_cli
-postcode_cli.py:4:0: W0611: Unused ArgumentParser imported from argparse (unused-import)
+postcode_cli.py:8:19: W0621: Redefining name 'mode' from outer scope (line 34) (redefined-outer-name)
+postcode_cli.py:8:30: W0621: Redefining name 'postcode' from outer scope (line 33) (redefined-outer-name)
 ************* Module postcode_functions
-postcode_functions.py:13:4: W2301: Unnecessary ellipsis constant (unnecessary-ellipsis)
-postcode_functions.py:19:4: W2301: Unnecessary ellipsis constant (unnecessary-ellipsis)
-postcode_functions.py:16:15: W0613: Unused argument 'cache' (unused-argument)
-postcode_functions.py:29:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
-postcode_functions.py:33:4: W0719: Raising too general exception: Exception (broad-exception-raised)
-postcode_functions.py:43:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
-postcode_functions.py:44:11: C0121: Comparison 'response.json()['result'] == None' should be 'response.json()['result'] is None' (singleton-comparison)
+postcode_functions.py:38:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
 postcode_functions.py:51:4: W0719: Raising too general exception: Exception (broad-exception-raised)
-postcode_functions.py:76:10: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
-postcode_functions.py:4:0: C0411: standard import "os" should be placed before third party import "requests" (wrong-import-order)
-postcode_functions.py:5:0: C0411: standard import "json" should be placed before third party import "requests" (wrong-import-order)
-postcode_functions.py:4:0: W0611: Unused import os (unused-import)
-postcode_functions.py:5:0: W0611: Unused import json (unused-import)
+postcode_functions.py:61:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+postcode_functions.py:69:4: W0719: Raising too general exception: Exception (broad-exception-raised)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.63/10 (previous run: 7.63/10, +0.00)
+Your code has been rated at 9.35/10 (previous run: 9.35/10, +0.00)
 
