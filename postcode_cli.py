@@ -1,7 +1,11 @@
 """A CLI application for interacting with the Postcode API."""
 
+import argparse
 from argparse import ArgumentParser
 
 
 if __name__ == "__main__":
-    pass
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mode")
+    parser.add_argument("postcode")
+    args = parser.parse_args()
